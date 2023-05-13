@@ -27,9 +27,9 @@
 #define TFT_COUNT 1        // Number of screens (1 or 2)
 #define TFT1_CS -1         // TFT 1 chip select pin (set to -1 to use TFT_eSPI setup)
 #define TFT2_CS -1         // TFT 2 chip select pin (set to -1 to use TFT_eSPI setup)
-#define TFT_1_ROT 1        // TFT 1 rotation
+#define TFT_1_ROT 2        // TFT 1 rotation
 #define TFT_2_ROT 1        // TFT 2 rotation
-#define EYE_1_XPOSITION  0         // x shift for eye 1 image on display
+#define EYE_1_XPOSITION  50         // x shift for eye 1 image on display
 #define EYE_2_XPOSITION  320 - 128 // x shift for eye 2 image on display
 
 #define DISPLAY_BACKLIGHT  -1 // Pin for backlight control (-1 for none)
