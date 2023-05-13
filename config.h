@@ -9,19 +9,19 @@
 // uses a simpler "football-shaped" eye that's left/right symmetrical.
 // Default shape includes the caruncle, creating distinct left/right eyes.
 
-//#define SYMMETRICAL_EYELID
+#define SYMMETRICAL_EYELID
 
 // Enable ONE of these #includes -- HUGE graphics tables for various eyes:
-// #include "data/defaultEye.h"      // Standard human-ish hazel eye -OR-
+#include "data/defaultEye.h"      // Standard human-ish hazel eye -OR-
 // #include "data/dragonEye.h"     // Slit pupil fiery dragon/demon eye -OR-
 // #include "data/noScleraEye.h"   // Large iris, no sclera -OR-
-#include "data/goatEye.h"       // Horizontal pupil goat/Krampus eye -OR-
-//#include "data/newtEye.h"       // Eye of newt -OR-
-//#include "data/terminatorEye.h" // Git to da choppah!
-//#include "data/catEye.h"        // Cartoonish cat (flat "2D" colors)
-//#include "data/owlEye.h"        // Minerva the owl (DISABLE TRACKING)
-//#include "data/naugaEye.h"      // Nauga googly eye (DISABLE TRACKING)
-//#include "data/doeEye.h"        // Cartoon deer eye (DISABLE TRACKING)
+// #include "data/goatEye.h"       // Horizontal pupil goat/Krampus eye -OR-
+// #include "data/newtEye.h"       // Eye of newt -OR-
+// #include "data/terminatorEye.h" // Git to da choppah!
+// #include "data/catEye.h"        // Cartoonish cat (flat "2D" colors)
+// #include "data/owlEye.h"        // Minerva the owl (DISABLE TRACKING)
+// #include "data/naugaEye.h"      // Nauga googly eye (DISABLE TRACKING)
+// #include "data/doeEye.h"        // Cartoon deer eye (DISABLE TRACKING)
 
 // DISPLAY HARDWARE SETTINGS (screen type & connections) -------------------
 #define TFT_COUNT 1        // Number of screens (1 or 2)
