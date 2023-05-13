@@ -1,1 +1,1 @@
-# ESP32LCDRound240x204Eyes
+# ESP32LCDRound240x240Eyes
