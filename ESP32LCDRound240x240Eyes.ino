@@ -64,9 +64,9 @@ extern void user_setup(void); // Functions in the user*.cpp files
 extern void user_loop(void);
 
 #define SCREEN_X_START 0
-#define SCREEN_X_END   240   // Badly named, actually the "eye" width!
+#define SCREEN_X_END   SCREEN_WIDTH   // Badly named, actually the "eye" width!
 #define SCREEN_Y_START 0
-#define SCREEN_Y_END   240  // Actually "eye" height
+#define SCREEN_Y_END   SCREEN_HEIGHT  // Actually "eye" height
 
 // A simple state machine is used to control eye blinks/winks:
 #define NOBLINK 0       // Not currently engaged in a blink
