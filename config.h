@@ -28,7 +28,7 @@
 #define TFT1_CS -1         // TFT 1 chip select pin (set to -1 to use TFT_eSPI setup)
 #define TFT2_CS -1         // TFT 2 chip select pin (set to -1 to use TFT_eSPI setup)
 #define TFT_1_ROT 2        // TFT 1 rotation
-#define TFT_2_ROT 1        // TFT 2 rotation
+#define TFT_2_ROT 2        // TFT 2 rotation
 #define EYE_1_XPOSITION  50         // x shift for eye 1 image on display
 #define EYE_2_XPOSITION  320 - 128 // x shift for eye 2 image on display
 
