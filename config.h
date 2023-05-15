@@ -9,7 +9,7 @@
 // uses a simpler "football-shaped" eye that's left/right symmetrical.
 // Default shape includes the caruncle, creating distinct left/right eyes.
 
-#define SYMMETRICAL_EYELID
+// #define SYMMETRICAL_EYELID
 
 // Enable ONE of these #includes -- HUGE graphics tables for various eyes:
 #include "data/defaultEye.h"      // Standard human-ish hazel eye -OR-
