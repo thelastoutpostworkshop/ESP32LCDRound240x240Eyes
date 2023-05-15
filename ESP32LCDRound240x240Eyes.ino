@@ -31,7 +31,7 @@
 
 // DMA can be used with RP2040, STM32 and ESP32 processors when the interface
 // is SPI, uncomment the next line:
-//#define USE_DMA
+#define USE_DMA
 
 // Load TFT driver library
 #include <SPI.h>
