@@ -24,19 +24,19 @@
 // #include "data/doeEye.h"        // Cartoon deer eye (DISABLE TRACKING)
 
 // DISPLAY HARDWARE SETTINGS (screen type & connections) -------------------
-#define TFT_COUNT 1        // Number of screens (1 or 2)
-#define TFT1_CS -1         // TFT 1 chip select pin (set to -1 to use TFT_eSPI setup)
-#define TFT2_CS -1         // TFT 2 chip select pin (set to -1 to use TFT_eSPI setup)
+#define TFT_COUNT 2        // Number of screens (1 or 2)
+#define TFT1_CS 15         // TFT 1 chip select pin (set to -1 to use TFT_eSPI setup)
+#define TFT2_CS 14         // TFT 2 chip select pin (set to -1 to use TFT_eSPI setup)
 #define TFT_1_ROT 2        // TFT 1 rotation
-#define TFT_2_ROT 2        // TFT 2 rotation
+#define TFT_2_ROT 0        // TFT 2 rotation
 #define EYE_1_XPOSITION  50         // x shift for eye 1 image on display
-#define EYE_2_XPOSITION  320 - 128 // x shift for eye 2 image on display
+#define EYE_2_XPOSITION  50 // x shift for eye 2 image on display
 
 #define DISPLAY_BACKLIGHT  -1 // Pin for backlight control (-1 for none)
 #define BACKLIGHT_MAX    255
 
 // EYE LIST ----------------------------------------------------------------
-#define NUM_EYES 1 // Number of eyes to display (1 or 2)
+#define NUM_EYES 2 // Number of eyes to display (1 or 2)
 
 #define BLINK_PIN   -1 // Pin for manual blink button (BOTH eyes)
 #define LH_WINK_PIN -1 // Left wink pin (set to -1 for no pin)
