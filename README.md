@@ -4,4 +4,4 @@ Master the Round display on ESP 32 and GC9A01 driver with the TFT_eSPI library. 
 https://youtu.be/pmCc7z_Mi8I
 
 
-![Setup](https://github.com/thelastoutpostworkshop/ESP32LCDRound240x240Eyes/blob/main/images/usage_serial_monitor.png)
+![Setup](https://github.com/thelastoutpostworkshop/ESP32LCDRound240x240Eyes/blob/main/images/IMG-3903.JPG)
