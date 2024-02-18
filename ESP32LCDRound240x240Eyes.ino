@@ -87,15 +87,14 @@ void setup(void) {
   //while (!Serial);
   Serial.println("Starting");
 
-#if defined(DISPLAY_BACKLIGHT) && (DISPLAY_BACKLIGHT >= 0)
-  // Enable backlight pin, initially off
-  Serial.println("Backlight turned off");
-  pinMode(DISPLAY_BACKLIGHT, OUTPUT);
-  digitalWrite(DISPLAY_BACKLIGHT, LOW);
-#endif
+  delay(6000);
 
-  // User call for additional features
-  user_setup();
+  #if defined(DISPLAY_BACKLIGHT) && (DISPLAY_BACKLIGHT >= 0)
+    // Enable backlight pin, initially off
+    Serial.println("Backlight turned off");
+    pinMode(DISPLAY_BACKLIGHT, OUTPUT);
+    digitalWrite(DISPLAY_BACKLIGHT, LOW);
+  #endif
 
   // Initialise the eye(s), this will set all chip selects low for the tft.init()
   initEyes();
@@ -104,9 +103,9 @@ void setup(void) {
   Serial.println("Initialising displays");
   tft.init();
 
-#ifdef USE_DMA
-  tft.initDMA();
-#endif
+  #ifdef USE_DMA
+    tft.initDMA();
+  #endif
 
   // Raise chip select(s) so that displays can be individually configured
   digitalWrite(eye[0].tft_cs, HIGH);
@@ -119,12 +118,15 @@ void setup(void) {
     digitalWrite(eye[e].tft_cs, HIGH);
   }
 
-#if defined(DISPLAY_BACKLIGHT) && (DISPLAY_BACKLIGHT >= 0)
-  Serial.println("Backlight now on!");
-  analogWrite(DISPLAY_BACKLIGHT, BACKLIGHT_MAX);
-#endif
+  #if defined(DISPLAY_BACKLIGHT) && (DISPLAY_BACKLIGHT >= 0)
+    Serial.println("Backlight now on!");
+    analogWrite(DISPLAY_BACKLIGHT, BACKLIGHT_MAX);
+  #endif
 
   startTime = millis(); // For frame-rate calculation
+
+  // User call for additional features
+  user_setup();
 }
 
 // MAIN LOOP -- runs continuously after setup() ----------------------------

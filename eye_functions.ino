@@ -204,7 +204,7 @@ void frame(uint16_t iScale) // Iris scale (0-1023)
 
   if (!(++frames & 255)) { // Every 256 frames...
     float elapsed = (millis() - startTime) / 1000.0;
-    if (elapsed) Serial.println((uint16_t)(frames / elapsed)); // Print FPS
+    //if (elapsed) Serial.println((uint16_t)(frames / elapsed)); // Print FPS
   }
 
   if (++eyeIndex >= NUM_EYES) eyeIndex = 0; // Cycle through eyes, 1 per call
